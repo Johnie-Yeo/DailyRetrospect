@@ -13,3 +13,5 @@
 | 2019.11.13 | [반성](https://github.com/Johnie-Yeo/DailyReview/blob/master/BoostCampMembership/20191113_day10.md)              |
 | 2019.11.16 | [삼성SW역량테스트 A형 후기](https://github.com/Johnie-Yeo/DailyReview/blob/master/BoostCampMembership/20191116_day13.md) |
 | 2019.11.18 | [스프린트 계획](https://github.com/Johnie-Yeo/DailyReview/blob/master/BoostCampMembership/20191118_day15.md) |
+| 2019.11.20 | [면접회고 & MongoDB](https://github.com/Johnie-Yeo/DailyReview/blob/master/BoostCampMembership/20191118_day15.md) |
+| 2019.11.18 | [Image Resize에 대한 고민](https://github.com/Johnie-Yeo/DailyReview/blob/master/BoostCampMembership/20191118_day15.md) |
