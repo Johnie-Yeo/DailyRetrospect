@@ -2,6 +2,12 @@
 
 ## 일일회고
 
+### Jan 2020
+
+|    Date   | Summary |
+|:---------:|:-------:|
+|2020.01.01 |[새해 첫 회고, 또 다시 시작](https://github.com/Johnie-Yeo/DailyRetrospect/blob/master/Retrospect/20200101.md)|
+
 ### Dec 2019
 
 |    Date   | Summary |
