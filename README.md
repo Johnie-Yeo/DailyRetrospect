@@ -18,36 +18,6 @@
 |2019.12.30 ||
 |2019.12.31 ||
 
-## After Boost Camp
-
-### Boostcamp Challenge
-
-| Index |  Week |
-|:-----:|:-----:|
-|   1   |[챌린지 1주차](https://github.com/Johnie-Yeo/DailyRetrospect/blob/master/AfterBoostCamp/Challenge_1stWeek.md)|
-|   2   |챌린지 2주차|
-|   3   |챌린지 3주차|
-|   4   |챌린지 4주차|
-
-### Boostcamp Membership - 학습 스프린트
-
-| Index |      Week     |   | Index |     Week    |
-|:-----:|:-------------:|:-:|:-----:|:-----------:|
-|   5   |  멤버십 1주차   |   |    9  |  멤버십 5주차  |
-|   6   |  멤버십 2주차   |   |   10  |  멤버십 6주차  |
-|   7   |  멤버십 3주차   |   |   11  |  멤버십 7주차  |
-|   8   |  멤버십 4주차   |   |   12  |  멤버십 8주차  |
-
-### Boostcamp Membership - 그룹 프로젝트 
-
-| Index |      Week     |   | Index |      Week     |
-|:-----:|:-------------:|:-:|:-----:|:-------------:|
-|  13   |  프로젝트 1주차  |   |   17  |  프로젝트 5주차  |
-|  14   |  프로젝트 2주차  |   |   18  |  프로젝트 6주차  |
-|  15   |  프로젝트 3주차  |   |   19  |  프로젝트 7주차  |
-|  16   |  프로젝트 4주차  |   |       |               |
-
-
 ## Boost Camp Membership
 
 | 날짜         | 요약                                                                                                             |
