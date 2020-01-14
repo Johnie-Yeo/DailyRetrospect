@@ -63,6 +63,16 @@
 	- 속도에 더 유리
 	- 검색을 위한 Elasticsearch와 더 잘 맞다.
 
+#### 검색
+
+- full text query
+	- nori 형태소 분석기가 베이스
+	- search analyzer은 standard를 사용하고 색인은 nori로 하였다.
+		- search analyzer을 standard로 설정한 이유는 정확한 값을 찾고 싶었기 때문에
+	- standard 검색을 위해 decompound_mode는 mixed로, 또 filter에 shingle을 사용함으로써 단어의 조합이더라도 검색이 가능하도록 하였다.
+	- 검색은 문장이 올 수 있고 단어가 올 수 있으므로 match와 term에 대해 검색하되 bool.should로 묶어 처리하였다.
+- term verctor api 활용
+
 ## 힘들었던 점
 
 - 협업의 방향성
