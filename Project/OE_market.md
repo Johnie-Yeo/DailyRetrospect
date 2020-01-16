@@ -2,6 +2,30 @@
 
 > https://github.com/connect-foundation/2019-20/
 
+## 프로젝트 전반적 개요
+
+### Auth server
+
+- github oauth & jwt
+- mysql
+- 유저 정보, 데이터 정합성 및 트랜잭션 고려
+
+### Chat server
+
+- socket io
+- mongo
+
+### Product server
+
+- 상품 CRUD & 검색
+- MongoDB & Elastic search 사용
+- 상품에 대한 디테일 밖에 없으므로 정규화를 하지 않고 싶다
+
+### Client server
+
+- react build -> obj storage -> cdn
+- 앞에 nginx를 통해 entrance 관리
+
 ## 나의 역할
 
 ### FrontEnd
