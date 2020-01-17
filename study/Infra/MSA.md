@@ -2,20 +2,61 @@
 
 ## What is MSA?
 
-"microservice architectural 스타일은 
-개발을 위한 접근 스타일이다.
-한 어플리케이션을 여러 작은 서비스로 나누어 개발하고 각각은 독립으로 동작하는 프로세스와 "
+microservice architectural 스타일은 단일 어플리케이션을 소규모 서비스 단위로 개발하는 방법으로, 각각 자체 프로세스에서 실행되고 경량 메커니즘, 대개 HTTP API를 기반으로 통신합니다. 이 서비스들은 비즈니스 기능을 기준으로 구축괴고 완전한 자동배포 시스템을 통해 독립적으로 배포됩니다. - by Martin Folwer
 
-"the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery." - by Martin Folwer
+## MSA의 특징
 
-## MSA의 장점
+1. 어플리케이션 로직을 각자 책임이 명확한 작은 컴포넌트들로 분해하고 이들을 조합해서 솔루션을 제공한다.
 
-- 서비스/프로젝트가 커져도 전체 시스템 구조 파악이 쉽다.
-- 빌드 시간 및 테스트시간, 그리고 배포시간에 대한 부담감이 적다.
-- 서비스를 부분적으로 scale-out하기가 쉽다.
-- 부분의 장애가 전체 서비스의 장애로 이어지는 경우가 거의 없다.
+2. 각 컴포넌트는 작은 책임 영역을 담당하고 완전히 상호 독립적으로 배포된다. 
+   마이크로서비스는 비즈니스 영역의 한 부분에서만 책임을 담당한다. 
+   그리고 여러 애플리케이션에서 재사용할 수 있어야 한다.
+
+3. 마이크로 서비스는 몇가지 기본 원칙에 기반을 두며, 서비스 소비자와 서비스 제공자 사이의 데이터 교환을 위해 HTTP와 JSON 같은 경량 통신 프로토콜을 사용한다.
+
+4. 애플리케이션은 항상 기술 중립적 프로토콜을 사용해 통신하므로 서비스 구현 기술과는 무관하다. 
+   따라서 마이크로서비스 기반의 애플리케이션을 다양한 언어와 기술로 구축할 수 있다는 것을 의미한다.
+
+5. 작고 독립적이며 분산된 마이크로서비스를 사용해 조직은 명확히 정의된 책임 영역을 담당하는 소규모 팀을 보유할 수 있다. 
+   이 팀들은 애플리케이션 출시처럼 하나의 목표를 향해 일하지만, 자기가 개발하는 서비스만 책임진다.
+ 
+
+## MSA의 장단점
+
+### 장점
+
+1. 작은 서비스들로 나누고, 각 서비스를 독립적으로 만듦으로써 결합도를 낮춤
+
+2. 대용량 분산 환경에 적합
+
+3. 복잡도 감소
+
+4. 유연한 배포
+
+5. 재사용성 → 확장성
+
+6. 서비스별 hw/sw 플랫폼/기술의 도입  및 확장이 자유롭다.
+
+7. 개발자가 이해하기 쉽고 개발/운영 매 단계의 생산성이 높다.
+
+8. 지속적인 개발/배포가 biz capability 단위로 관련된 소수의 인원의 책임하에 이루어질 수 있다.
+
+9. fault isolation 특성이 좋다.
+
+ 
+
+### 단점
+ 
+|  단점  |  보완방법  |
+|:-----:|:--------:|
+|장애추적, 모니터링, 매지징이 어렵다.|Sleuth등과 ELK, EFK등의 서비스를 연동하여 사용하는 방안 고려 |
+|여러 서비스에 걸쳐져 있는 feature의 경우, 트랜잭션을 다루기 어렵다.|보상 트랜잭션 또는 부분적으로 composite 서비스로의 병합 고려|
+|여러 서비스에 걸쳐져 있는 feature의 경우, 테스팅이 복잡하다.	|테스팅 계획 및 방법에 노력 투자| 서비스 간 dependency가 있는 경우 릴리즈가 까다롭다.	
+|관련 개발조직 간 roll-out 계획 마련 및 dependency의 명백한 관리|서비스 개수가 많고 유동적이기때문에 Continuous Integration/Delivery 및 서비스 관리 상의 문제가 발생할 수 있다.	서비스 레지스트리, 모니터링, 개발~디플로이 자동화 기술 고려 (PaaS 고려)|
+|monolith로 시작한 시스템을 Microservices로 전환할 때 큰 고통이 수반될 수 있다.|B2C웹 또는 SaaS 어플리케이션은 처음부터 Microservices 및 서비스별 조직 구성 고려|
 
 ## Reference
 
 - [Microservices](https://martinfowler.com/articles/microservices.html)
 - [MSA 제대로 이해하기](https://velog.io/@tedigom/MSA-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-1-MSA%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90-3sk28yrv0e)
+- [[MSA 개념 정립하기] MSA의 개념과 장단점](https://waspro.tistory.com/429)
